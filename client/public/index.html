@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Osoro.</title>
+<link rel="stylesheet" href="index-styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-right">
+            <a class="home" href="index.html">ホーム</a>
+            <a class="mypage"  href="#" id="login-show">マイページ</a>
+        </div>
+    </header>
+
+    <div class="login-modal-wrapper" id="login-modal">
+        <div class="modal">
+
+            <div class="close-modal"> 
+            <i class="fa fa-2x fa-times"></i>
+            </div>
+
+            <div id="login-form">
+                <h2>ログイン</h2>
+                <form action="#">
+                    <input class="form-control" type="text" placeholder="メールアドレス">
+                    <input class="form-control" type="password" placeholder="パスワード">
+                    <button id="login">ログイン</button>
+                    <a href="#">アカウントをお持ちでないですか？</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="logo">
+            <h1>Osoro.</h1>
+            <h2>「ーーーーーーーーーーーーーーーーーーーーーーーーーー」</h2>
+        </div>
+        <div class="search-form">
+            <form
+                action="http://localhost:5000/aaa"
+                method="post"
+                enctype="multipart/form-data"
+            >
+                <div class="select">
+                <label for="file_upload">画像ファイルを選択して下い
+                    <input type="file" id="file" onchange="$('#fake_text_box').val($(this).val())">
+                    <input type="text" id="file_upload" value="ファイル選択" onClick="$('#file').click();">
+                        <button type="submit">検索</button>
+                </label>
+                <input type="text" id="fake_text_box" value="" size="35" readonly onClick="$('#file').click();">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <a href="#">運営会社について</a>
+            <a href="#">ご利用規約</a>
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">お問い合わせ</a>
+        </div>
+        <div class="footer-right">©Osoro. inc.</div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

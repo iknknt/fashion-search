@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>マイページ/Osoro.</title>
+<link rel="stylesheet" href="mypage-styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html">Osoro.</a>
+            <p>「ーーーーーーーーーーーーーーーーーーーーーーーーーー」</p>
+        </div>
+        <div class="header-right">
+            <a class="home" href="index.html">ホーム</a>
+            <a class="mypage" href="mypage.html">マイページ</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <input id="favorite" type="radio" name="tab_item" checked>
+            <label class="tab_item" for="favorite">お気に入り</label>
+            <input id="history" type="radio" name="tab_item">
+            <label class="tab_item" for="history">検索履歴</label>
+            <div class="tab_content" id="favorite_content">
+                <div class="tab_content_description">
+                    <p class="c-txtsp">お気に入り</p>
+                </div>
+            </div>
+            <div class="tab_content" id="history_content">
+                <div class="tab_content_description">
+                    <p class="c-txtsp">検索履歴</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <a href="#">運営会社について</a>
+            <a href="#">ご利用規約</a>
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">お問い合わせ</a>
+        </div>
+        <div class="footer-right">©Osoro. inc.</div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
