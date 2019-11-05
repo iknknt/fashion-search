@@ -1,0 +1,201 @@
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+header {
+    height: 50px;
+    width: auto;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.header-right {
+    float: right;
+    padding: 0 50px 0 0;
+    line-height: 50px;
+}
+
+.header-right a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.header-right a::after {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: purple;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.header-right a:hover::after {
+    bottom: -4px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.login-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    /* display: none;を追加してください */
+    display: none;
+  }
+  
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+  
+.fa-times {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
+  }
+  
+#login-form {
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+  
+#login-form h2 {
+    color: #5f5d60;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+#login-form input {
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+    }
+  
+#login-form button {
+    display: inline-block;
+    padding: 14px 140px;
+    background-color: purple;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+
+#login-form a {
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+main {
+    height: 500px;
+    padding: 20px 30px;
+    margin: 0;
+    width: auto;
+}
+
+.logo {
+    height: 140px;
+}
+
+.logo h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+.logo h2 {
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+}
+
+.search-form {
+    margin-top: 0;
+    height: 320px;
+}
+
+.select {
+    text-align: center;
+    line-height: 320px;
+}
+
+label {
+    color: white; 
+    font-size: 13px;
+    background-color: purple;
+    padding: 20px;
+    border-radius: 10px;
+    cursor:pointer;
+    position: relative;
+    }
+    label > input{
+    display:none; 
+    }
+
+
+.select button {
+    font-size: 2rem;
+    background-color: purple;
+    color: #fff;
+    border-radius: 10px;
+    float: right;
+
+}
+
+#fake_text_box {
+    margin-left: 10px;
+    padding: 20px 100px;
+}
+
+footer {   
+    padding: 20px 50px;
+    margin: 0;
+    height: 50px;
+    width: auto;
+}
+
+footer a {
+    color: #a0a0a0;
+    text-decoration: none;
+    line-height: 50px;
+    float: left;
+    margin-right: 2rem;
+    display: block;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    color: #a0a0a0;
+    float: right;
+    line-height: 50px;
+}
+
