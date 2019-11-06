@@ -14,31 +14,30 @@ const Page = ({ theme }) => {
 
   return (
     <React.Fragment>
-      <header>
-        <div className="header-right">
-            <a className="home" href="index.html">ホーム</a>
-            <a className="mypage"  href="#" id="login-show">マイページ</a>
-        </div>
-      </header>
+      <div css={css`
+        width: 100%;
+        height: 90px;
+        background-color: red;
+      `}>
 
-      <main>
-        <div css={css`
-          background-color: red;
-        `}>
-            <h1>Osoro.</h1>
-            <h2>「ーーーーーーーーーーーーーーーーーーーーーーーーーー」</h2>
-        </div>
-      </main>
+      </div>
 
-      <footer>
-        <div class="footer-left">
-            <a href="#">運営会社について</a>
-            <a href="#">ご利用規約</a>
-            <a href="#">プライバシーポリシー</a>
-            <a href="#">お問い合わせ</a>
-        </div>
-        <div class="footer-right">©Osoro. inc.</div>
-      </footer>
+      <div css={css`
+          width: 100%;
+          height: 500px;
+          background-color: blue;
+      `}>
+
+      </div>
+
+      <div css={css`
+        width: 100%;
+        height: 90px;
+        background-color: green;
+      `}>
+
+
+      </div>
     </React.Fragment>
   );
 };
