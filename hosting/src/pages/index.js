@@ -20,13 +20,15 @@ const Page = ({ theme }) => {
         align-items: center;
       `}>
         <div css={css`
-
+          color: purple;
         `}>
           <a href="#" css={css`
             margin-right: 2rem;
+            text-decoration: none;
           `}>ホーム</a>
           <a href="#" css={css`
-            margin-right: 3rem;
+            margin-right: 3rem;  
+            text-decoration: none;         
           `}>マイページ</a>
         </div>
       </div>
@@ -65,10 +67,14 @@ const Page = ({ theme }) => {
           enctype="multipart/form-data"
         >
           <div>
-          <label for="file_upload">画像ファイルを選択して下い
-            <input type="file" ></input>
-              <button type="submit">検索</button>
-          </label>
+            <input type="file" css={css`
+
+            `}></input>
+              <button type="submit" css={css`
+                color: white;
+                background-color: purple;
+                border-radius: 10px;
+              `}>検索</button>
           </div>
         </form>
         </div>
@@ -77,10 +83,12 @@ const Page = ({ theme }) => {
       <div css={css`
         width: 100%;
         height: 90px;
+        color: #a0a0a0;
         display: flex;
         text-align: center;
         justify-content: center;
         align-items: center;
+        @media 
       `}>
         <div>
           <a href="#" css={css`
