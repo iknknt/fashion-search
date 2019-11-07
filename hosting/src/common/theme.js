@@ -4,7 +4,7 @@ const { createMuiTheme, responsiveFontSizes } = require('@material-ui/core/style
 module.exports = responsiveFontSizes(createMuiTheme({
   typography: {
     useNextVariants: true,
-    fontFamily: ['"Noto Sans JP"', 'sans-serif'].join(','),
+    fontFamily: ["Avenir Next", "Hiragino Kaku Gothic ProN W3", "sans-serif"].join(','),
   },
   palette: {
     background: {
