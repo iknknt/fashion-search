@@ -15,8 +15,9 @@ const ccc = {
 // console.log(ccc.aaa);
 
 
-const Sample = ({ message }) => {
-  return (<h1><div>aaa</div>{message}</h1>);
+const Sample = ({ message, aaa }) => {
+  console.log(css);
+  return (<h1 css={aaa}><div>aaa</div>{message}</h1>);
 };
 
 
@@ -53,7 +54,9 @@ const Page = ({ theme }) => {
       <main>
         <h1>Sample Firebase Project</h1>
 
-        <Sample message='sample' />
+        <Sample message='sample3333' aaa={css`
+          background-color: red;
+        `} />
         <Sample2 message='sample' aaa="hello=aaa" color="blue">aaa</Sample2>
         <Sample2 message='hi' aaa="hello=aaa" color="green">aaa</Sample2>
         <Sample3 message='sample' />
