@@ -15,7 +15,7 @@
     "fs-extra": "^8.1.0",
     "glob": "^7.1.4",
     "jaconv": "^1.0.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "md5": "^2.2.1",
     "promise-retry": "^1.1.1",
     "puppeteer": "^1.19.0",
