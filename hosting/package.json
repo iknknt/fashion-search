@@ -46,7 +46,7 @@
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "uuid": "^3.3.3",
-    "validator": "^11.1.0",
+    "validator": "^13.7.0",
     "xss": "^1.0.6"
   },
   "devDependencies": {
